@@ -5,13 +5,13 @@ import img3 from "./images/3.jpg";
 import img4 from "./images/4.jpg";
 import img5 from "./images/5.jpg";
 import video from "./media/video_optimized.mp4";
-import "./app.css";
+import styles from "./app.module.css";
 
 const App = () => {
   useEffect(() => {
     let zSpacing = -1000;
     let lastPos = zSpacing / 5;
-    let frames = Array.from(document.getElementsByClassName("frame"));
+    let frames = Array.from(document.getElementsByClassName("app_frame__ne+7C"));
     let zVals = [];
 
     window.onscroll = function () {
@@ -34,15 +34,15 @@ const App = () => {
   }, []);
 
   return (
-    <div className="container">
-      <section className="gallery">
+    <div className={styles.container}>
+      <section className={styles.gallery}>
 
-        <div className="frame"></div>
+        <div className={styles.frame}></div>
 
-        <div className="frame">
+        <div className={styles.frame}>
           <div>
             <div
-              className="frameMedia frameMediaRight"
+              className={`${styles.frameMedia} ${styles.frameMediaRight}`}
               style={{
                 backgroundImage: `url(https://images.unsplash.com/photo-1617396900799-f4ec2b43c7ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2FsbHBhcGVyJTIwNGt8ZW58MHx8MHx8fDA%3D&w=1000&q=80)`,
               }}
@@ -50,10 +50,10 @@ const App = () => {
           </div>
         </div>
 
-        <div className="frame">
+        <div className={styles.frame}>
           <div>
             <div
-              className="frameMedia frameMediaLeft"
+              className={`${styles.frameMedia} ${styles.frameMediaLeft}`}
               style={{
                 backgroundImage: `url(${img1})`,
               }}
@@ -61,10 +61,10 @@ const App = () => {
           </div>
         </div>
 
-        <div className="frame frameBg">
+        <div className={`${styles.frame} ${styles.frameBg}`}>
           <div>
             <video
-              className="frameMedia frameMediaRight"
+              className={`${styles.frameMedia} ${styles.frameMediaRight}`}
               src={video}
               autoPlay
               loop
@@ -73,12 +73,12 @@ const App = () => {
           </div>
         </div>
 
-        <div className="frame"></div>
+        <div className={styles.frame}></div>
 
-        <div className="frame">
+        <div className={styles.frame}>
           <div>
             <div
-              className="frameMedia frameMediaRight"
+              className={`${styles.frameMedia} ${styles.frameMediaRight}`}
               style={{
                 backgroundImage: `url(https://www.pexels.com/photo/842711/download/)`,
               }}
@@ -86,10 +86,10 @@ const App = () => {
           </div>
         </div>
 
-        <div className="frame frameBg">
+        <div className={`${styles.frame} ${styles.frameBg}`}>
           <div>
             <div
-              className="frameMedia frameMediaLeft"
+              className={`${styles.frameMedia} ${styles.frameMediaLeft}`}
               style={{
                 backgroundImage: `url(${img2})`,
               }}
@@ -97,23 +97,23 @@ const App = () => {
           </div>
         </div>
 
-        <div className="frame"></div>
+        <div className={styles.frame}></div>
 
-        <div className="frame frameBg">
+        <div className={`${styles.frame} ${styles.frameBg}`}>
           <div>
             <div
-              className="frameMedia frameMediaRight"
+              className={`${styles.frameMedia} ${styles.frameMediaRight}`}
               style={{ backgroundImage: `url(${img3})` }}
             ></div>
           </div>
         </div>
 
-        <div className="frame"></div>
+        <div className={styles.frame}></div>
 
-        <div className="frame frameBg">
+        <div className={`${styles.frame} ${styles.frameBg}`}>
           <div>
             <div
-              className="frameMedia frameMediaLeft"
+              className={`${styles.frameMedia} ${styles.frameMediaLeft}`}
               style={{
                 backgroundImage: `url(https://c0.wallpaperflare.com/preview/1/703/828/fighter-jet-airshow.jpg)`,
               }}
@@ -121,19 +121,19 @@ const App = () => {
           </div>
         </div>
 
-        <div className="frame frameBg">
+        <div className={`${styles.frame} ${styles.frameBg}`}>
           <div>
             <div
-              className="frameMedia frameMediaRight"
+              className={`${styles.frameMedia} ${styles.frameMediaRight}`}
               style={{ backgroundImage: `url(${img4})` }}
             ></div>
           </div>
         </div>
 
-        <div className="frame frameBg">
+        <div className={`${styles.frame} ${styles.frameBg}`}>
           <div>
             <video
-              className="frameMedia frameMediaLeft"
+              className={`${styles.frameMedia} ${styles.frameMediaLeft}`}
               src={video}
               autoPlay
               loop
@@ -142,22 +142,22 @@ const App = () => {
           </div>
         </div>
 
-        <div className="frame"></div>
-        <div className="frame"></div>
+        <div className={styles.frame}></div>
+        <div className={styles.frame}></div>
 
-        <div className="frame">
-          <div className="frame__content frameBg">
+        <div className={styles.frame}>
+          <div className={styles.frameBg}>
             <div
-              className="frameMedia frameMediaRight"
+              className={`${styles.frameMedia} ${styles.frameMediaRight}`}
               style={{ backgroundImage: `url(${img5})` }}
             ></div>
           </div>
         </div>
 
-        <div className="frame">
+        <div className={styles.frame}>
           <div>
             <video
-              className="frameMedia"
+              className={styles.frameMedia}
               src={video}
               autoPlay
               loop
@@ -166,13 +166,13 @@ const App = () => {
           </div>
         </div>
 
-        <div className="frame"></div>
-        <div className="frame"></div>
+        <div className={styles.frame}></div>
+        <div className={styles.frame}></div>
 
-        <div className="frame">
-          <div className="frame__content frameBg">
+        <div className={styles.frame}>
+          <div className={styles.frameBg}>
             <div
-              className="frameMedia frameMediaRight"
+              className={`${styles.frameMedia} ${styles.frameMediaRight}`}
               style={{ backgroundImage: `url(${img5})` }}
             ></div>
           </div>
