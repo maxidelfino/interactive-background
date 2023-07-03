@@ -16,12 +16,7 @@
 body {
   --side-small: 26;
   background: linear-gradient(220.55deg, #FF3F3F 0%, #063CFF 100%);
-  color: #fff;
-  font-size: calc(var(--index) * 0.8);
-  font-family: raleway_c, sans-serif;
-  line-height: 1.75;
   height: var(--depth);
-  font-weight: 300;
 }
 
 body::-webkit-scrollbar {
