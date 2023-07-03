@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./card.module.css";
 
-const Card = ({ position, image, frameBg }) => {
+const Card = ({ position, image }) => {
   return (
-    <div className={`${styles.frame} ${frameBg && styles.frameBg}`}>
+    <div className={styles.frame} >
       <div>
         <div
           className={`${styles.frameMedia} ${

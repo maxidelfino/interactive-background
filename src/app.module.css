@@ -8,14 +8,14 @@
   --index: calc(1vw + 1vh);
   --gutter: 30px;
   --side-small: 26;
-  --side-big: 36;
+  --side-big: 15;
   --depth: 4100px;
   --transition: 0.75s cubic-bezier(0.075, 0.5, 0, 1);
 }
 
 body {
   --side-small: 26;
-  background-color: black;
+  background: linear-gradient(220.55deg, #FF3F3F 0%, #063CFF 100%);
   color: #fff;
   font-size: calc(var(--index) * 0.8);
   font-family: raleway_c, sans-serif;
