@@ -19,6 +19,10 @@
   border-radius: 10px;
 }
 
+.frameMedia:hover {
+    cursor: pointer;
+}
+
 .frameMediaLeft {
   right: calc(var(--side-small) / 2 * var(--index) + var(--gutter));
 }

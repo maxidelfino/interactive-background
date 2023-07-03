@@ -1,21 +1,9 @@
 import React, { useEffect } from "react";
-
 import Card from "./components/Card";
-
 import styles from "./app.module.css";
 import { mockData } from "./utils/mock-data";
 
 const App = () => {
-  // document.addEventListener('mousemove', (e) => {
-  //   document.querySelector(".frame").forEach((move)=>{
-  //     const movingValue = move.getAttribute('data-value')
-  //     const x = e.clientX * movingValue / 250;
-  //     const y = e.clientY * movingValue / 250;
-
-  //     move.style.transform = `translateX(${x}px) translateY(${y}px )`
-  //   })
-  // })
-
   useEffect(() => {
     const zSpacing = -1000;
     let lastPos = zSpacing / 10;
@@ -27,7 +15,6 @@ const App = () => {
     window.onscroll = function () {
       const top = document.documentElement.scrollTop;
       const delta = lastPos - top;
-      lastPos = top;
 
       frames.forEach(function (frame, i) {
         zVals.push(i * zSpacing + zSpacing);
@@ -37,7 +24,15 @@ const App = () => {
         const opacity = zVals[i] < Math.abs(zSpacing) / 1.8 ? 1 : 0;
         frame.style.transform = transform;
         frame.style.opacity = opacity;
+        if (top > lastPos) {
+          setTimeout(() => {
+            frame.style.display = `${opacity === 0 ? "none" : ""}`;
+          }, 200);
+        } else {
+          frame.style.display = "flex";
+        }
       });
+      lastPos = top;
     };
 
     window.scrollTo(0, 1);
