@@ -8,7 +8,10 @@ Besides having animations in the cursor as in the same images.
 
 ## Preview
 
-![Preview](./src/assets/readmeVideo.webm)
+![image](https://github.com/maxidelfino/interactive-background/assets/89036646/934a1e14-33da-46c7-b804-82fceb4cfb3c)
+
+https://github.com/maxidelfino/interactive-background/assets/89036646/7df03a30-12fe-4171-bbce-8e474a8f1960
+
 
 
 ## Features
