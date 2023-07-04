@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/interactive-background/static/css/main.42d7056b.css",
+    "main.js": "/interactive-background/static/js/main.c8c73c96.js",
+    "index.html": "/interactive-background/index.html",
+    "main.42d7056b.css.map": "/interactive-background/static/css/main.42d7056b.css.map",
+    "main.c8c73c96.js.map": "/interactive-background/static/js/main.c8c73c96.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.42d7056b.css",
+    "static/js/main.c8c73c96.js"
+  ]
+}
