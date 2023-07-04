@@ -15,7 +15,7 @@
 
 body {
   --side-small: 26;
-  background: linear-gradient(220.55deg, #ff3f3f 0%, #063cff 100%);
+  background: linear-gradient(220.55deg, #D7003A 0%, #2001cf 100%);
   height: var(--depth);
   cursor: none;
 }
