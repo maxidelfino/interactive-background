@@ -8,9 +8,11 @@ Besides having animations in the cursor as in the same images.
 
 ## Preview
 
-![image](https://github.com/maxidelfino/interactive-background/assets/89036646/934a1e14-33da-46c7-b804-82fceb4cfb3c)
+![image](https://github.com/maxidelfino/interactive-background/assets/89036646/fbd06ca9-449b-4f86-bc2d-fedecd63d95f)
+![image](https://github.com/maxidelfino/interactive-background/assets/89036646/cf5718fb-5ee6-4739-931c-9ff89e20a79c)
 
-https://github.com/maxidelfino/interactive-background/assets/89036646/7df03a30-12fe-4171-bbce-8e474a8f1960
+https://github.com/maxidelfino/interactive-background/assets/89036646/ea488a19-5082-4c93-9630-f6541c8ecd8e
+
 
 
 
