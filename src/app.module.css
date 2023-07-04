@@ -15,8 +15,9 @@
 
 body {
   --side-small: 26;
-  background: linear-gradient(220.55deg, #FF3F3F 0%, #063CFF 100%);
+  background: linear-gradient(220.55deg, #ff3f3f 0%, #063cff 100%);
   height: var(--depth);
+  cursor: none;
 }
 
 body::-webkit-scrollbar {

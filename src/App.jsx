@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Card from "./components/Card";
 import styles from "./app.module.css";
 import { mockData } from "./utils/mock-data";
+import CustomCursor from "./components/CustomCursor";
 
 const App = () => {
   useEffect(() => {
@@ -39,13 +40,16 @@ const App = () => {
   }, []);
 
   return (
-    <div className={styles.container}>
-      <section className={styles.gallery}>
-        {mockData.map((data) => {
-          return <Card position={data.position} image={data.image} />;
-        })}
-      </section>
-    </div>
+    <>
+      <CustomCursor />
+      <div className={styles.container}>
+        <section className={styles.gallery}>
+          {mockData.map((data) => {
+            return <Card position={data.position} image={data.image} />;
+          })}
+        </section>
+      </div>
+    </>
   );
 };
 
