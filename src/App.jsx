@@ -5,6 +5,7 @@ import { mockData } from "./utils/mock-data";
 import CustomCursor from "./components/CustomCursor";
 
 const App = () => {
+  console.log('render');
   useEffect(() => {
     const zSpacing = -500;
     let lastPos = zSpacing / 55;
@@ -32,6 +33,14 @@ const App = () => {
         } else {
           frame.style.display = "flex";
         }
+
+        document.addEventListener("mousemove", (e) => {
+          const movingValue = frame.getAttribute("data-value");
+          const x = (e.clientX * movingValue) / 150;
+          const y = (e.clientY * movingValue) / 150;
+
+          frame.style.transform = `translate3d(${x}px, ${y}px, ${zVals[i]}px)`;
+        });
       });
       lastPos = top;
     };
@@ -45,7 +54,13 @@ const App = () => {
       <div className={styles.container}>
         <section className={styles.gallery}>
           {mockData.map((data) => {
-            return <Card position={data.position} image={data.image} />;
+            return (
+              <Card
+                position={data.position}
+                image={data.image}
+                dataValue={data.dataValue}
+              />
+            );
           })}
         </section>
       </div>

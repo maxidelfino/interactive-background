@@ -3,9 +3,9 @@ import styles from "./card.module.css";
 import { Tilt } from "react-tilt";
 import { tiltConfig } from "../../config/tilt-config";
 
-const Card = ({ position, image }) => {
+const Card = ({ position, image, dataValue }) => {
   return (
-    <div className={styles.frame}>
+    <div className={styles.frame} data-value={dataValue}>
       <Tilt
         options={tiltConfig}
         className={`${styles.frameMedia} ${
