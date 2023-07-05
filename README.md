@@ -53,4 +53,5 @@ Start the server
 
 ## Additional
 
-"Tilt" library was used to perform hover effects on images
+Test in chrome browser (it may not work in other browsers because it is not optimized)
+"Tilt" library was used to perform hover effects on images.
