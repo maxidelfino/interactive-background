@@ -13,11 +13,11 @@ const App = () => {
     );
     const zVals = [];
 
-    window.onscroll = function () {
+    window.onscroll = () => {
       const top = document.documentElement.scrollTop;
       const delta = lastPos - top;
 
-      frames.forEach(function (frame, i) {
+      frames.forEach((frame, i) => {
         zVals.push(i * zSpacing + zSpacing);
         zVals[i] += delta * -5.9;
 
