@@ -26,3 +26,11 @@
 .frameMediaRight {
   left: calc(var(--side-small) / 2 * var(--index) + var(--gutter));
 }
+
+.frameMediaTop {
+  bottom: calc(var(--side-small) / 2 * var(--index) + var(--gutter));
+}
+
+.frameMediaBottom {
+  top: calc(var(--side-small) / 2 * var(--index) + var(--gutter));
+}

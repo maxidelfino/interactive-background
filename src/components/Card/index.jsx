@@ -13,6 +13,10 @@ const Card = ({ position, image }) => {
             ? styles.frameMediaLeft
             : position === "right"
             ? styles.frameMediaRight
+            : position === "top"
+            ? styles.frameMediaTop
+            : position === "bottom"
+            ? styles.frameMediaBottom
             : ""
         }`}
         style={{

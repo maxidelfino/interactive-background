@@ -6,8 +6,8 @@ import CustomCursor from "./components/CustomCursor";
 
 const App = () => {
   useEffect(() => {
-    const zSpacing = -1000;
-    let lastPos = zSpacing / 10;
+    const zSpacing = -500;
+    let lastPos = zSpacing / 55;
     const frames = Array.from(
       document.getElementsByClassName("card_frame__tY3RH")
     );
@@ -19,7 +19,7 @@ const App = () => {
 
       frames.forEach(function (frame, i) {
         zVals.push(i * zSpacing + zSpacing);
-        zVals[i] += delta * -11.2;
+        zVals[i] += delta * -5.9;
 
         const transform = `translateZ(${zVals[i]}px)`;
         const opacity = zVals[i] < Math.abs(zSpacing) / 1.8 ? 1 : 0;
