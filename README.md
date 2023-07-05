@@ -10,8 +10,8 @@ Besides having animations in the cursor as in the same images.
 ![image](https://github.com/maxidelfino/interactive-background/assets/89036646/0d43642e-6b29-49ed-bfcd-4598605424be)
 ![image](https://github.com/maxidelfino/interactive-background/assets/89036646/c582266e-870d-41c2-bf0c-000e199952f3)
 
+https://github.com/maxidelfino/interactive-background/assets/89036646/45231f3c-23ca-45ce-9a26-d9f5fa8b3ade
 
-https://github.com/maxidelfino/interactive-background/assets/89036646/8c5569bb-b24a-44e2-b8cc-38f44198135c
 
 
 
@@ -21,6 +21,7 @@ https://github.com/maxidelfino/interactive-background/assets/89036646/8c5569bb-b
 - The background changes from red to blue as you scroll through it.
 - The cursor changes color constantly.
 - When hovering over the image, it will rotate in a particular way.
+- Added "parallax" effect.
 
 
 ## Deployment
