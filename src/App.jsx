@@ -28,7 +28,7 @@ const App = () => {
         if (top > lastPos) {
           setTimeout(() => {
             frame.style.display = `${opacity === 0 ? "none" : ""}`;
-          }, 200);
+          }, 500);
         } else {
           frame.style.display = "flex";
         }
