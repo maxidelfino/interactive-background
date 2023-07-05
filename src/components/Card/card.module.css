@@ -28,9 +28,29 @@
 }
 
 .frameMediaTop {
-  bottom: calc(var(--side-small) / 2 * var(--index) + var(--gutter));
+  bottom: calc(2 * var(--index) + var(--gutter) + 100px);
 }
 
 .frameMediaBottom {
-  top: calc(var(--side-small) / 2 * var(--index) + var(--gutter));
+  top: calc(2 * var(--index) + var(--gutter) + 100px);
+}
+
+.frameMediaBottomLeft {
+  top: calc(2 * var(--index) + var(--gutter) + 100px);
+  right: calc(var(--side-small) / 2 * var(--index) + var(--gutter));
+}
+
+.frameMediaBottomRight {
+  top: calc(2 * var(--index) + var(--gutter) + 100px);
+  left: calc(var(--side-small) / 2 * var(--index) + var(--gutter));
+}
+
+.frameMediaTopLeft {
+  bottom: calc(2 * var(--index) + var(--gutter) + 100px);
+  right: calc(var(--side-small) / 2 * var(--index) + var(--gutter));
+}
+
+.frameMediaTopRight {
+  bottom: calc(2 * var(--index) + var(--gutter) + 100px);
+  left: calc(var(--side-small) / 2 * var(--index) + var(--gutter));
 }
