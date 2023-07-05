@@ -5,7 +5,6 @@ import { mockData } from "./utils/mock-data";
 import CustomCursor from "./components/CustomCursor";
 
 const App = () => {
-  console.log('render');
   useEffect(() => {
     const zSpacing = -500;
     let lastPos = zSpacing / 55;
