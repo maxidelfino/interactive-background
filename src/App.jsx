@@ -35,8 +35,8 @@ const App = () => {
 
         document.addEventListener("mousemove", (e) => {
           const movingValue = frame.getAttribute("data-value");
-          const x = (e.clientX * movingValue) / 150;
-          const y = (e.clientY * movingValue) / 150;
+          const x = (e.clientX * movingValue) / 250;
+          const y = (e.clientY * movingValue) / 250;
 
           frame.style.transform = `translate3d(${x}px, ${y}px, ${zVals[i]}px)`;
         });
